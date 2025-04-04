@@ -1,3 +1,7 @@
 # SQLite database files
 /data/
 *.db 
+# Other
+/target/
+/logs/
+/.vscode/
