@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/layout :: head">
+</head>
+<body>
+    <nav th:replace="fragments/layout :: menu"></nav>
+    
+    <div class="container content-wrapper">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title" th:text="${employee.firstName + ' ' + employee.lastName}"></h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <h4>Employee Details</h4>
+                                <p><strong>Email:</strong> <span th:text="${employee.email}"></span></p>
+                                <p><strong>Department:</strong> <span th:text="${employee.department}"></span></p>
+                                <p><strong>Position:</strong> <span th:text="${employee.position}"></span></p>
+                                <p><strong>Birth Date:</strong> <span th:text="${#temporals.format(employee.birthDate, 'dd-MM-yyyy')}"></span></p>
+                            </div>
+                            <div class="col-md-6">
+                                <h4>Regular Office Days</h4>
+                                <ul class="list-unstyled">
+                                    <li th:each="day : ${employee.officeDays}" th:text="${day.displayName}"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="temporary-schedule mt-4">
+                            <h4>Temporary Schedule</h4>
+                            <a th:href="@{/employee/{id}/schedule(id=${employee.id})}" class="btn btn-primary mb-3">
+                                Manage Temporary Schedule
+                            </a>
+                            
+                            <div th:if="${#lists.isEmpty(temporarySchedules)}" class="alert alert-info">
+                                No temporary schedules found.
+                            </div>
+                            
+                            <div th:each="schedule : ${temporarySchedules}" class="card mb-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Schedule: <span th:text="${#temporals.format(schedule.startDate, 'dd-MM-yyyy')}"></span>
+                                        to <span th:text="${#temporals.format(schedule.endDate, 'dd-MM-yyyy')}"></span>
+                                    </h5>
+                                    <p><strong>Office Days:</strong></p>
+                                    <ul>
+                                        <li th:each="day : ${schedule.officeDays}" th:text="${day.displayName}"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

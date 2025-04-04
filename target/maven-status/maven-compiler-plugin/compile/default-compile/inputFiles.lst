@@ -1,0 +1,15 @@
+/Users/anton_l/dev/cursor/proj/employee-mgr/src/main/java/com/example/employeemgr/config/ThymeleafConfig.java
+/Users/anton_l/dev/cursor/proj/employee-mgr/src/main/java/com/example/employeemgr/controller/EmployeeController.java
+/Users/anton_l/dev/cursor/proj/employee-mgr/src/main/java/com/example/employeemgr/model/Employee.java
+/Users/anton_l/dev/cursor/proj/employee-mgr/src/main/java/com/example/employeemgr/repository/EmployeeRepository.java
+/Users/anton_l/dev/cursor/proj/employee-mgr/src/main/java/com/example/employeemgr/config/DatabaseInitializer.java
+/Users/anton_l/dev/cursor/proj/employee-mgr/src/main/java/com/example/employeemgr/config/SQLiteConfig.java
+/Users/anton_l/dev/cursor/proj/employee-mgr/src/main/java/com/example/employeemgr/model/DayOfWeek.java
+/Users/anton_l/dev/cursor/proj/employee-mgr/src/main/java/com/example/employeemgr/service/TemporaryScheduleService.java
+/Users/anton_l/dev/cursor/proj/employee-mgr/src/main/java/com/example/employeemgr/model/TemporarySchedule.java
+/Users/anton_l/dev/cursor/proj/employee-mgr/src/main/java/com/example/employeemgr/controller/DatabaseController.java
+/Users/anton_l/dev/cursor/proj/employee-mgr/src/main/java/com/example/employeemgr/util/DatabaseUtils.java
+/Users/anton_l/dev/cursor/proj/employee-mgr/src/main/java/com/example/employeemgr/EmployeeMgrApplication.java
+/Users/anton_l/dev/cursor/proj/employee-mgr/src/main/java/com/example/employeemgr/controller/WebController.java
+/Users/anton_l/dev/cursor/proj/employee-mgr/src/main/java/com/example/employeemgr/repository/TemporaryScheduleRepository.java
+/Users/anton_l/dev/cursor/proj/employee-mgr/src/main/java/com/example/employeemgr/service/EmployeeService.java
