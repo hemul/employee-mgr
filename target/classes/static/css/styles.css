@@ -1,0 +1,39 @@
+/* Common styles */
+.navbar {
+    margin-bottom: 20px;
+}
+
+.content-wrapper {
+    padding: 20px;
+}
+
+/* Card styles */
+.employee-card {
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.employee-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Table styles */
+.table-responsive {
+    overflow-x: auto;
+}
+
+.table th {
+    background-color: #343a40;
+    color: white;
+}
+
+/* Action buttons */
+.btn-group .btn {
+    margin-right: 2px;
+}
+
+/* Form styles */
+.form-group {
+    margin-bottom: 1rem;
+} 
